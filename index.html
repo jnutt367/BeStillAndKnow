@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Still and Know</title>
+    <style>
+        * {
+            transition: transform;
+        }
+        
+        body {
+            background-color: black;
+            margin: 5em 2em;
+            position: absolute;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            max-width: 25em;
+        }
+        
+        #world {
+            position: relative;
+            width: 16em;
+        }
+        
+        #world-overlay {
+            position: relative;
+            top: -9em;
+            width: 16em;
+        }
+        
+        #hourglass {
+            position: relative;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            width: 4em;
+            z-index: 4;
+        }
+        
+        #wormhole {
+            position: relative;
+            width: 16em;
+            z-index: 2;
+        }
+        
+        .white-wrapper {
+            height: 12em;
+            background-color: white;
+            position: relative;
+            top: -2em;
+            width: 16em;
+            z-index: 1;
+        }
+        
+        #dino-days {
+            position: relative;
+            top: 4em;
+            text-align: center;
+            width: 15em;
+        }
+        
+        #black-bg-jurassic {
+            position: relative;
+            left: -2em;
+            top: -4em;
+            z-index: 1;
+        }
+        
+        #top-redline {
+            position: relative;
+            width: 16em;
+            z-index: 2;
+            top: -22em;
+        }
+        
+        #big-cloud {
+            position: relative;
+            width: 5em;
+            top: -19.5em;
+            left: .8em;
+            z-index: 4;
+        }
+        
+        #small-cloud {
+            position: relative;
+            top: -19em;
+            left: -5em;
+            width: 1.5em;
+            z-index: 4;
+        }
+        
+        @media (min-width: 769px) {
+            * {
+                background-color: darkblue;
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="world">
+        <img src="asstes199-248/Asset 242.svg">
+
+    </div>
+
+    <div id="world-overlay">
+        <img src="asstes199-248/Asset 227.svg">
+    </div>
+    <div id="hourglass">
+        <img src="assets1-98/Asset 74.svg">
+    </div>
+
+    <div id="wormhole">
+        <img src="assets1-98/Asset 76.svg">
+    </div>
+
+    <!--This is the end of the wormhole going into the white portion-->
+
+    <div class="white-wrapper">
+        <img id="dino-days" src="assets99-198/Asset 138.svg">
+
+    </div>
+    <div id="black-bg-jurassic">
+        <img src="assets1-98/Asset 35.svg">
+
+    </div>
+    <div id="top-redline">
+        <img src="assets1-98/Asset 67.svg">
+    </div>
+    <div id="first-cloud">
+        <img id="big-cloud" src="asstes199-248/SVG/Asset 255.svg">
+        <img id="small-cloud" src="asstes199-248/SVG/Asset 254.svg">
+    </div>
+    <!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script src="gsap.js"></script>-->
+</body>
+
+</html>
