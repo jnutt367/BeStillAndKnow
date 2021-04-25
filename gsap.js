@@ -5,7 +5,7 @@ let tl = gsap.timeline({
             trigger: "#dino-days",
             markers: true,
             pin: true,
-            start: "top 60%",
+            start: "top 75%",
             end: "bottom 55%",
             toggleActions: "play none reverse play"
         }
