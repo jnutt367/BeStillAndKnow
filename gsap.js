@@ -15,5 +15,5 @@ let tl = gsap.timeline({
     .fromTo("#first-cloud", { opacity: 0 }, { duration: 2, opacity: 1, ease: "back", scale: "1.2", repeat: -1 })
     .fromTo("#second-cloud", { opacity: 0 }, { duration: 2, opacity: 1, ease: "back", scale: "1.1", repeat: -1 })
     .to("#first-volcano", { opacity: 1, duration: 1, x: .2, repeat: -1 })
-    .fromTo("#first-red-bubble", { opacity: .6 }, { duration: 3, opacity: 1, scale: 1.2, ease: "rough", repeat: -1 })
-    .to("#first-bubble-group", { duration: 3, scale: 1.2, ease: "rough", repeat: -1 })
+    .fromTo("#first-red-bubble", { opacity: .6 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
+    .to("#first-bubble-group", { duration: 3, scale: 1.2, ease: "elastic", repeat: -1 })
