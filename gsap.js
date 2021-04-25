@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#dino-days",
-            markers: true,
+            markers: false,
             pin: true,
             start: "top 75%",
             end: "bottom 55%",
