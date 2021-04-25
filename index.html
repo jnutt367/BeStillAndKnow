@@ -11,13 +11,16 @@
             transition: transform;
         }
         
+        html {
+            background-color: grey;
+        }
+        
         body {
             background-color: black;
             margin: 5em 2em;
-            position: absolute;
+            position: relative;
             display: grid;
-            align-items: center;
-            justify-content: center;
+            place-items: center;
             max-width: 25em;
         }
         
@@ -34,10 +37,7 @@
         
         #hourglass {
             position: relative;
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            width: 4em;
+            width: 3em;
             z-index: 4;
         }
         
@@ -61,43 +61,40 @@
             top: 4em;
             text-align: center;
             width: 15em;
-        }
-        
-        #black-bg-jurassic {
-            position: relative;
-            left: -2em;
-            top: -4em;
-            z-index: 1;
+            z-index: 4;
         }
         
         #top-redline {
             position: relative;
             width: 16em;
             z-index: 2;
-            top: -22em;
+            top: -2em;
         }
         
         #big-cloud {
             position: relative;
             width: 5em;
-            top: -19.5em;
-            left: .8em;
+            top: -1em;
+            left: -3em;
             z-index: 4;
         }
         
         #small-cloud {
             position: relative;
-            top: -19em;
-            left: -5em;
+            top: -.5em;
+            left: -8em;
             width: 1.5em;
             z-index: 4;
         }
         
-        @media (min-width: 769px) {
-            * {
-                background-color: darkblue;
-                transform: scale(1.2);
-            }
+        #second-cloud {
+            position: relative;
+            left: 8em;
+            top: -2.5em;
+        }
+        
+        #black-bg-jurassic {
+            height: 25em;
         }
     </style>
 </head>
@@ -120,16 +117,15 @@
         <img src="assets1-98/Asset 76.svg">
     </div>
 
-    <!--This is the end of the wormhole going into the white portion-->
+    This is the end of the wormhole going into the white portion
 
     <div class="white-wrapper">
         <img id="dino-days" src="assets99-198/Asset 138.svg">
 
     </div>
-    <div id="black-bg-jurassic">
-        <img src="assets1-98/Asset 35.svg">
 
-    </div>
+
+
     <div id="top-redline">
         <img src="assets1-98/Asset 67.svg">
     </div>
@@ -137,10 +133,20 @@
         <img id="big-cloud" src="asstes199-248/SVG/Asset 255.svg">
         <img id="small-cloud" src="asstes199-248/SVG/Asset 254.svg">
     </div>
-    <!--
+
+    <div id="second-cloud">
+        <img id="big-cloud" src="asstes199-248/SVG/Asset 255.svg">
+        <img id="small-cloud" src="asstes199-248/SVG/Asset 254.svg">
+    </div>
+    <div id="black-bg-jurassic">
+        <img src="assets1-98/Asset 35.svg">
+
+    </div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
-    <script src="gsap.js"></script>-->
+    <script src="gsap.js"></script>
 </body>
 
 </html>
