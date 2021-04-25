@@ -16,7 +16,7 @@
         }
         
         body {
-            background-color: black;
+            background-color: white;
             margin: 5em 2em;
             position: relative;
             display: grid;
@@ -62,14 +62,14 @@
             top: 4em;
             text-align: center;
             width: 15em;
-            z-index: 4;
+            z-index: 10;
         }
         
         #top-redline {
             position: relative;
             width: 16em;
-            z-index: 2;
-            top: -1.6em;
+            z-index: 10;
+            top: 1em;
         }
         
         #big-cloud {
@@ -77,7 +77,7 @@
             width: 5em;
             top: -1em;
             left: -3em;
-            z-index: 4;
+            z-index: 11;
         }
         
         #small-cloud {
@@ -85,21 +85,21 @@
             top: -.5em;
             left: -8em;
             width: 1.5em;
-            z-index: 4;
+            z-index: 11;
         }
         
         #first-cloud {
             position: relative;
             top: 1em;
             left: -.5em;
-            z-index: 2;
+            z-index: 11;
         }
         
         #second-cloud {
             position: relative;
             left: 11.2em;
             top: -2.6em;
-            z-index: 2;
+            z-index: 11;
         }
         
         #first-volcano {
@@ -107,7 +107,7 @@
             width: 9em;
             top: -2.2em;
             left: -6em;
-            z-index: 5;
+            z-index: 11;
         }
         
         #second-volcano {
@@ -115,7 +115,7 @@
             width: 7em;
             top: -7.5em;
             left: 6em;
-            z-index: 5;
+            z-index: 11;
         }
         
         #red-bg {
@@ -133,6 +133,22 @@
         #top-red-layer {
             position: relative;
             top: 6em;
+        }
+        
+        #third-volcano {
+            position: relative;
+            width: 4.5em;
+            top: -34em;
+            left: 5.4em;
+            z-index: 11;
+        }
+        
+        #black-bg {
+            position: relative;
+            width: 16em;
+            top: -47.3em;
+            z-index: 2;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -155,7 +171,7 @@
         <img src="assets1-98/Asset 76.svg">
     </div>
 
-    This is the end of the wormhole going into the white portion
+    <p style="color:white;">This is the end of the wormhole going into the white portion</p>
 
     <div class="white-wrapper">
         <img id="dino-days" src="assets99-198/Asset 138.svg">
@@ -184,13 +200,18 @@
     <div id="second-volcano">
         <img src="assets1-98/Asset 38.svg">
     </div>
-
-
-
     <div id="red-bg">
         <img id="top-red-layer" src="asstes199-248/Asset 217.svg">
         <img id="bottom-red-layer" src="asstes199-248/Asset 218.svg">
     </div>
+    <div id="third-volcano">
+        <img src="assets1-98/Asset 39.svg">
+    </div>
+    <div id="black-bg">
+        <img src="assets1-98/Asset 36.svg">
+    </div>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
