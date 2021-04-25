@@ -28,3 +28,4 @@ let tl = gsap.timeline({
     .fromTo("#redline-asset54", { opacity: 0 }, { duration: 1, opacity: 1, scale: 1, ease: "power1" })
     .fromTo("#second-bubble-group", { opacity: 0 }, { duration: .5, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
     .to("#last-red-bubble", { scale: .2, duration: 5, repeat: -1 })
+    .fromTo("#dark-stream", { opacity: 0 }, { opacity: 1, duration: 3, ease: "power3" })
