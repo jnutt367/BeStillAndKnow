@@ -11,6 +11,6 @@ let tl = gsap.timeline({
         }
     })
     .fromTo("#hourglass", { opacity: 0 }, { duration: 3, rotate: 360, opacity: 1 })
-    .fromTo("#first-cloud", { opacity: 0 }, { duration: 2, opacity: 1, ease: "elastic", scale: "1.1", repeat: -1 })
+    .fromTo("#first-cloud", { opacity: 0 }, { duration: 2, opacity: 1, ease: "elastic", scale: "1.2", repeat: -1 })
     .fromTo("#second-cloud", { opacity: 0 }, { duration: 2, opacity: 1, ease: "elastic", scale: "1.1", repeat: -1 })
     .to("#first-volcano", { opacity: 1, duration: 1, x: .2, repeat: -1 })
