@@ -21,7 +21,7 @@
             position: relative;
             display: grid;
             place-items: center;
-            max-width: 25em;
+            max-width: 16em;
         }
         
         #world {
@@ -44,6 +44,7 @@
         #wormhole {
             position: relative;
             width: 16em;
+            top: 2em;
             z-index: 2;
         }
         
@@ -68,7 +69,7 @@
             position: relative;
             width: 16em;
             z-index: 2;
-            top: -2em;
+            top: -2.5em;
         }
         
         #big-cloud {
@@ -90,12 +91,14 @@
         #first-cloud {
             position: relative;
             top: 2em;
+            z-index: 2;
         }
         
         #second-cloud {
             position: relative;
             left: 10em;
             top: -2.5em;
+            z-index: 2;
         }
         
         #black-bg-jurassic {
@@ -104,10 +107,10 @@
         
         #first-volcano {
             position: relative;
-            z-index: 5;
             width: 8em;
             top: -1em;
             left: -5em;
+            z-index: 5;
         }
         
         #second-volcano {
@@ -116,6 +119,23 @@
             width: 7em;
             top: -6em;
             left: 5em;
+        }
+        
+        #red-bg {
+            position: relative;
+            top: -45em;
+            width: 16em;
+            z-index: 1;
+        }
+        
+        #bottom-red-layer {
+            position: relative;
+            top: -6em;
+        }
+        
+        #top-red-layer {
+            position: relative;
+            top: 6em;
         }
     </style>
 </head>
@@ -173,7 +193,10 @@
         <img src="assets1-98/Asset 35.svg">
 
     </div>
-
+    <div id="red-bg">
+        <img id="top-red-layer" src="asstes199-248/Asset 217.svg">
+        <img id="bottom-red-layer" src="asstes199-248/Asset 218.svg">
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
