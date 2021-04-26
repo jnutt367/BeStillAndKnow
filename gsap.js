@@ -29,3 +29,4 @@ let tl = gsap.timeline({
     .fromTo("#second-bubble-group", { opacity: 0 }, { duration: .5, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
     .to("#last-red-bubble", { scale: .2, duration: 5, repeat: -1 })
     .fromTo("#dark-stream", { opacity: 0 }, { opacity: 1, duration: 3, ease: "power3" })
+    .fromTo("#skull", { y: -10, opacity: 1 }, { opacity: 0, y: 10, duration: 6, ease: "back" })
