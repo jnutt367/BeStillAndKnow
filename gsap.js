@@ -36,3 +36,4 @@ let tl = gsap.timeline({
     .to("#nature-overlay", { duration: .2, y: 2, x: 10, repeat: "3" })
     .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
     .fromTo("#terry", { x: -200 }, { duration: 5, x: 400 })
+    .to("#first-caveman", { y: -100 })
