@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#dino-days",
+            test: "second-caveman",
             markers: false,
             pin: true,
             start: "top 75%",
@@ -36,4 +37,5 @@ let tl = gsap.timeline({
     .to("#nature-overlay", { duration: .2, y: 2, x: 10, repeat: "3" })
     .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
     .fromTo("#terry", { x: -200 }, { duration: 5, x: 400 })
-    .to("#first-caveman", { y: -100 })
+    .to("#first-caveman", { duration: 1, y: -100, ease: "bounce.inOut" })
+    .to("#second-caveman", { duration: 1, x: -60, y: 57, ease: "bounce.in", zIndex: "0" })
