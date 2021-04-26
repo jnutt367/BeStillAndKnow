@@ -32,5 +32,5 @@ let tl = gsap.timeline({
     .fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "back.OutIn", repeat: "3" })
     .fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
     .fromTo("#skull", { y: -10, opacity: 1 }, { opacity: 0, y: 1, duration: 6, ease: "bounce" })
-
-.fromTo("#second-blue-bubble-group", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
+    .fromTo("#second-blue-bubble-group", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
+    .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic", repeat: -1 })
