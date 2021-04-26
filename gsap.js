@@ -6,7 +6,7 @@ let tl = gsap.timeline({
             markers: false,
             pin: true,
             start: "top 75%",
-            end: "bottom 55%",
+            end: "bottom 45%",
             toggleActions: "play none reverse play"
         }
     })
