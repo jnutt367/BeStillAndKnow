@@ -23,14 +23,14 @@ let tl = gsap.timeline({
     .fromTo("#redline-asset51", { opacity: 0 }, { duration: 1, opacity: 1, scale: 1.2, ease: "power1" })
 
 
-
-.fromTo("#redline-asset34", { opacity: .6 }, { opacity: 1, ease: "power1", repeat: "-1" })
+.fromTo("#dark-stream", { opacity: .2 }, { opacity: 1, duration: 3, ease: "power3" })
+    .fromTo("#redline-asset34", { opacity: .6 }, { opacity: 1, ease: "power1", repeat: "-1" })
     .fromTo("#redline-asset55", { opacity: 0 }, { opacity: 1, ease: "power1" })
     .fromTo("#redline-asset54", { opacity: 0 }, { opacity: 1, scale: 1, ease: "power1" })
     .fromTo("#second-bubble-group", { opacity: 0 }, { duration: .5, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
     .fromTo("#last-red-bubble", { scale: 1, opacity: 0 }, { opacity: 1, scale: .2, duration: 5, repeat: "-1" })
-    .fromTo("#dark-stream", { opacity: .2 }, { opacity: 1, duration: 3, ease: "power3" })
-    .fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "back.OutIn", repeat: "3" })
+
+.fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "back.OutIn", repeat: "3" })
     .fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
     .fromTo("#skull", { y: -10, opacity: 1 }, { duration: 1, opacity: 0, y: 1, ease: "bounce" })
     .fromTo("#second-blue-bubble-group", { opacity: 0 }, { opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
