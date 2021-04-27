@@ -1,39 +1,17 @@
 gsap.registerPlugin(ScrollTrigger)
 
 let tl = gsap.timeline({
+        defaults: {
+            opacity: 0
+        },
         scrollTrigger: {
-            trigger: "",
+            trigger: "#hourglass",
             markers: false,
             pin: true,
             start: "top 75%",
             end: "bottom 45%",
-            toggleActions: "play none reverse play"
+            toggleActions: "restart none none reverse"
         }
     })
-    .fromTo("#dino-days", { opacity: 0 }, { duration: 2.5, fontWeight: "900", scale: "1.2", opacity: 1, ease: "elastic" })
-    .fromTo("#hourglass", { opacity: 0 }, { duration: 1, rotate: 360, opacity: 1 })
-    .to("#first-volcano", { opacity: 1, duration: .1, x: 1, repeat: "-1" })
-    .fromTo("#first-red-bubble", { opacity: 0 }, { opacity: 1, scale: 1.2, ease: "bounce.inOut", repeat: "-1" })
-    .fromTo("#first-bubble-group", { opacity: 0 }, { opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
-    .fromTo("#redline-asset53", { opacity: .6 }, { opacity: 1, scale: 1.2, ease: "power1", repeat: 3 })
-    .fromTo("#redline-asset52", { opacity: 0 }, { duration: 1, opacity: 1, scale: 1.2, ease: "power1" })
-    .fromTo("#redline-asset51", { opacity: 0 }, { duration: 1, opacity: 1, scale: 1.2, ease: "power1" })
-
-
-.fromTo("#dark-stream", { opacity: .2 }, { opacity: 1, duration: 3, ease: "power3" })
-    .fromTo("#redline-asset34", { opacity: .6 }, { opacity: 1, ease: "power1", repeat: "-1" })
-    .fromTo("#redline-asset55", { opacity: 0 }, { opacity: 1, ease: "power1" })
-    .fromTo("#redline-asset54", { opacity: 0 }, { opacity: 1, scale: 1, ease: "power1" })
-    .fromTo("#second-bubble-group", { opacity: 0 }, { duration: .5, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
-    .fromTo("#last-red-bubble", { scale: 1, opacity: 0 }, { opacity: 1, scale: .2, duration: 5, repeat: "-1" })
-
-.fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "back.OutIn", repeat: "3" })
-    .fromTo("#first-blue-bubble-group", { opacity: 0 }, { duration: 2.1, opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
-    .fromTo("#skull", { y: -10, opacity: 1 }, { duration: 1, opacity: 0, y: 1, ease: "bounce" })
-    .fromTo("#second-blue-bubble-group", { opacity: 0 }, { opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
-    .to("#nature-overlay", { duration: .2, y: 2, x: 10, repeat: "3" })
-    .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, y: -20, scale: 1.2, ease: "elastic" })
-    .fromTo("#terry", { x: -200 }, { duration: 5, x: 400 })
-    .to("#dinosaur", { x: -40, duration: 1, ease: "power4.in" })
-    .to("#first-caveman", { duration: 1, y: -100, ease: "bounce.in" })
-    .to("#second-caveman", { duration: 1, x: -60, y: 57, ease: "bounce.in", zIndex: "0" })
+    .fromTo("#hourglass", { opacity: 0 }, { duration: 1, opacity: 1, rotate: 720 })
+    .fromTo("#dino-days", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.3, ease: "elastic" })

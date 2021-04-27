@@ -19,12 +19,13 @@
         }
         
         body {
-            background-color: black;
+            background-color: silver;
             margin: 5em 2em;
             position: relative;
             display: grid;
             place-items: center;
             opacity: 1;
+            z-index: 0;
             max-width: 16em;
         }
         
@@ -89,7 +90,7 @@
         
         #small-cloud {
             position: relative;
-            top: -2.2em;
+            top: -3.3em;
             left: 5.5em;
             width: 4.7em;
             z-index: 11;
@@ -106,7 +107,7 @@
         #second-volcano {
             position: relative;
             width: 5.5em;
-            top: -5.5em;
+            top: -6.5em;
             left: 4em;
             z-index: 11;
         }
@@ -127,12 +128,56 @@
             display: none;
         }
         
+        #black-bg {
+            position: relative;
+            width: 16em;
+            top: -16em;
+            z-index: 2;
+            opacity: 1;
+        }
+        
+        #redline-asset34 {
+            width: 9em;
+            position: relative;
+            z-index: 10;
+            top: -30em;
+            left: -4em;
+        }
+        
+        #first-red-bubble {
+            width: .5em;
+            position: relative;
+            z-index: 10;
+            top: -34em;
+            left: -2em;
+        }
+        
+        #first-bubble-group {
+            width: .8em;
+            position: relative;
+            z-index: 10;
+            top: -36em;
+            left: 1em;
+        }
+        
+        #first-bubble {
+            position: relative;
+            width: 1em;
+        }
+        
+        #second-bubble {
+            position: relative;
+            width: .5em;
+            left: 1em;
+            top: -1.5em;
+        }
+        
         @media (min-width: 769px) {
             html {
-                background-color: black;
+                background-color: grey;
             }
             body {
-                background-color: black;
+                background-color: silver;
                 margin: 5em 14em 0 8em;
                 position: relative;
                 display: grid;
@@ -193,8 +238,8 @@
             #small-cloud {
                 position: relative;
                 top: -6em;
-                left: 10.4em;
-                width: 9.4em;
+                left: 12em;
+                width: 8em;
                 z-index: 11;
             }
             #first-volcano {
@@ -208,7 +253,7 @@
                 position: relative;
                 width: 11em;
                 top: -12em;
-                left: 7em;
+                left: 10em;
                 z-index: 11;
             }
             #third-volcano {
@@ -229,43 +274,26 @@
             #white-bg-lg {
                 display: none;
             }
+            #black-bg {
+                width: 32em;
+                top: -30em;
+            }
+            #redline-asset34 {
+                width: 18em;
+                position: relative;
+                z-index: 10;
+                top: -57em;
+                left: -8em;
+            }
+            #first-red-bubble {
+                width: 2em;
+                position: relative;
+                z-index: 10;
+                top: -61.3em;
+                left: -2.8em;
+            }
         }
         /*
-        
-       
-        
-        #black-bg {
-            position: relative;
-            width: 16em;
-            top: -47em;
-            z-index: 2;
-            opacity: 1;
-        }
-        
-        #redline-asset34 {
-            width: 9em;
-            position: relative;
-            z-index: 10;
-            top: -57em;
-            left: -3.2em;
-        }
-        
-        #first-red-bubble {
-            width: 1em;
-            position: relative;
-            z-index: 10;
-            top: -61.3em;
-            left: -2.8em;
-        }
-        
-        #first-bubble-group {
-            width: 1em;
-            position: relative;
-            z-index: 10;
-            top: -62em;
-            left: 2em;
-        }
-        
         #bubble2 {
             position: relative;
             width: .5em;
@@ -448,6 +476,9 @@
         */
         
         @media (min-width: 1024px) {
+            html {
+                background-color: black;
+            }
             body {
                 background-color: black;
                 margin: 5em 24em 0 2em;
@@ -502,9 +533,9 @@
             }
             #big-cloud {
                 position: relative;
-                width: 22em;
+                width: 24em;
                 top: 2em;
-                left: -17em;
+                left: -10em;
                 z-index: 11;
             }
             #small-cloud {
@@ -518,7 +549,7 @@
                 position: relative;
                 width: 26em;
                 top: -4em;
-                left: -20em;
+                left: -19em;
                 z-index: 11;
             }
             #second-volcano {
@@ -545,6 +576,24 @@
             }
             #white-bg-lg {
                 display: grid;
+            }
+            #black-bg {
+                width: 64em;
+                top: -61em;
+            }
+            #redline-asset34 {
+                width: 29em;
+                position: relative;
+                z-index: 10;
+                top: -111em;
+                left: -13em;
+            }
+            #first-red-bubble {
+                width: 1.5em;
+                position: relative;
+                z-index: 10;
+                top: -124em;
+                left: -10em;
             }
         }
     </style>
@@ -619,6 +668,21 @@
 
     <div id="third-volcano">
         <img src="asstes199-248/Asset 207.svg">
+    </div>
+    <div id="black-bg">
+        <img src="asstes199-248/Asset 216.svg">
+    </div>
+
+    <div id="redline-asset34">
+        <img src="assets1-98/Asset 34.svg">
+    </div>
+    <div id="first-red-bubble">
+        <img src="assets1-98/Asset 44.svg">
+    </div>
+
+    <div id="first-bubble-group">
+        <img id="first-bubble" src="assets1-98/Asset 44.svg">
+        <img id="second-bubble" src="assets1-98/Asset 44.svg">
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
