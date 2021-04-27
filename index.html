@@ -13,7 +13,7 @@
         }
         
         html {
-            background-color: black;
+            background-color: grey;
             position: relative;
             z-index: 20;
         }
@@ -48,24 +48,27 @@
         #wormhole {
             position: relative;
             width: 16em;
-            top: -0.5em;
+            top: 5.2em;
             z-index: 2;
         }
         
-        .white-wrapper {
-            height: 12em;
-            background-color: white;
+        #wormhole-black-bottom {
             position: relative;
-            top: -2em;
             width: 16em;
+            top: 2em;
             z-index: 1;
+        }
+        
+        #white-bg {
+            position: relative;
+            z-index: 0;
         }
         
         #dino-days {
             position: relative;
-            top: 4em;
+            top: -4em;
             text-align: center;
-            width: 15em;
+            width: 12em;
             z-index: 15;
         }
         
@@ -73,79 +76,163 @@
             position: relative;
             width: 16em;
             z-index: 11;
-            top: 1em;
+            top: -1em;
         }
         
         #big-cloud {
             position: relative;
             width: 5em;
             top: -1em;
-            left: -3em;
+            left: -2.7em;
             z-index: 11;
         }
         
         #small-cloud {
             position: relative;
-            top: -.5em;
-            left: -8em;
-            width: 1.5em;
-            z-index: 11;
-        }
-        
-        #first-cloud {
-            position: relative;
-            top: 3em;
-            left: -.5em;
-            z-index: 11;
-        }
-        
-        #second-cloud {
-            position: relative;
-            left: 11.2em;
-            top: -1em;
+            top: -2.2em;
+            left: 5.5em;
+            width: 4.7em;
             z-index: 11;
         }
         
         #first-volcano {
             position: relative;
-            width: 9em;
-            top: -0.5em;
-            left: -6.3em;
+            width: 6em;
+            top: -3em;
+            left: -4.4em;
             z-index: 11;
         }
         
         #second-volcano {
             position: relative;
-            width: 7em;
+            width: 5.5em;
             top: -5.5em;
-            left: 6em;
+            left: 4em;
             z-index: 11;
-        }
-        
-        #red-bg {
-            position: relative;
-            top: -20em;
-            width: 16em;
-            z-index: 1;
-        }
-        
-        #bottom-red-layer {
-            position: relative;
-            top: -6em;
-        }
-        
-        #top-red-layer {
-            position: relative;
-            top: 6em;
         }
         
         #third-volcano {
             position: relative;
-            width: 4.5em;
-            top: -33em;
-            left: 5.4em;
+            width: 4em;
+            top: -4em;
+            left: 3.4em;
             z-index: 11;
         }
+        
+        #white-bg-med {
+            display: none;
+        }
+        
+        #white-bg-lg {
+            display: none;
+        }
+        
+        @media (min-width: 769px) {
+            html {
+                background-color: black;
+            }
+            body {
+                background-color: black;
+                margin: 5em 14em 0 8em;
+                position: relative;
+                display: grid;
+                place-items: center;
+                opacity: 1;
+                max-width: 32em;
+            }
+            #world {
+                position: relative;
+                width: 32em;
+            }
+            #world-overlay {
+                position: relative;
+                top: -17em;
+                width: 32em;
+            }
+            #hourglass {
+                position: relative;
+                width: 6em;
+                z-index: 4;
+            }
+            #wormhole {
+                position: relative;
+                width: 32em;
+                top: 8.5em;
+                z-index: 2;
+            }
+            #wormhole-black-bottom {
+                position: relative;
+                width: 32em;
+                top: 2em;
+                z-index: 1;
+            }
+            #white-bg {
+                position: relative;
+                z-index: 0;
+            }
+            #dino-days {
+                position: relative;
+                top: -7.7em;
+                text-align: center;
+                width: 24em;
+                z-index: 15;
+            }
+            #top-redline {
+                position: relative;
+                width: 32em;
+                z-index: 11;
+                top: -1em;
+            }
+            #big-cloud {
+                position: relative;
+                width: 10em;
+                top: -1em;
+                left: -7em;
+                z-index: 11;
+            }
+            #small-cloud {
+                position: relative;
+                top: -6em;
+                left: 10.4em;
+                width: 9.4em;
+                z-index: 11;
+            }
+            #first-volcano {
+                position: relative;
+                width: 12em;
+                top: -4em;
+                left: -10em;
+                z-index: 11;
+            }
+            #second-volcano {
+                position: relative;
+                width: 11em;
+                top: -12em;
+                left: 7em;
+                z-index: 11;
+            }
+            #third-volcano {
+                position: relative;
+                width: 8em;
+                top: -9em;
+                left: 7em;
+                z-index: 11;
+            }
+            #white-bg {
+                display: none;
+                height: 10em;
+                width: 100%;
+            }
+            #white-bg-med {
+                display: grid;
+            }
+            #white-bg-lg {
+                display: none;
+            }
+        }
+        /*
+        
+       
         
         #black-bg {
             position: relative;
@@ -194,276 +281,281 @@
             z-index: 10;
         }
         /* this is the snake line that has the longest curve*/
-        
+        /*
         #redline-asset55 {
-            width: 10em;
             position: relative;
             z-index: 20;
-            top: -62.9em;
             left: 3.5em;
         }
         
         #redline-asset54 {
-            width: 6em;
             position: relative;
             z-index: 10;
-            top: -67em;
-            left: -1.6em;
         }
         
         #redline-asset53 {
-            width: 3em;
             position: relative;
             z-index: 10;
-            top: -69em;
-            left: -3.3em;
         }
         
         #redline-asset51 {
-            width: 5em;
             position: relative;
             z-index: 20;
-            top: -69.5em;
-            left: -4.5em;
         }
         
         #second-bubble-group {
-            width: 1em;
             position: relative;
             z-index: 10;
-            top: -69em;
-            left: -.5em;
         }
         
         #redline-asset49 {
-            width: 8em;
             position: relative;
             z-index: 10;
-            top: -72.5em;
-            left: 5em;
         }
         
         #last-red-bubble {
-            width: 1em;
             position: relative;
             z-index: 10;
-            top: -73.3em;
-            left: -5.5em;
         }
         
         #first-lava-set {
             position: relative;
-            width: .9em;
-            top: -79.15em;
-            left: -7em;
             z-index: 12;
         }
         
         #small-side-stream {
             position: relative;
-            width: .4em;
-            left: -.7em;
-            top: -4.7em;
         }
         
         #dark-stream {
             position: relative;
-            width: .7em;
-            top: -6.4em;
-            left: -.5em;
             z-index: 12;
         }
         
         #second-lava-set {
             position: relative;
-            width: .65em;
-            top: -89.05em;
-            left: 5.4em;
             z-index: 12;
         }
         
         #second-small-side-stream {
             position: relative;
-            width: .4em;
-            left: -.5em;
-            top: -3.5em;
         }
         
         #second-dark-stream {
             position: relative;
-            width: .4em;
-            top: -5.2em;
-            left: -.3em;
             z-index: 12;
         }
         
         #third-lava-set {
             position: relative;
-            width: .415em;
-            top: -92.0em;
-            left: 5.4em;
-            z-index: 12;
+            z-index: ;
         }
         
         #third-small-side-stream {
             position: relative;
-            width: .4em;
-            left: -.5em;
-            top: -2.3em;
+            z-index: ;
         }
         
         #third-dark-stream {
             position: relative;
-            width: .4em;
-            top: -4.1em;
-            left: -.3em;
-            z-index: 12;
+            z-index: ;
         }
         
         #green-bg {
-            width: 16.9em;
             position: relative;
-            top: -94em;
-            left: -.8em;
             z-index: 0;
-            margin-left: -.4em;
         }
         
         #red-leaf {
-            width: 2em;
             position: relative;
-            top: -124em;
-            left: -1.5em;
             z-index: 1;
         }
         
         #first-palm-tree {
-            width: 5em;
             position: relative;
-            top: -128.5em;
-            left: -5em;
             z-index: 10;
         }
         
         #first-palm-group {
-            width: 2.4em;
             position: relative;
-            top: -132.5em;
-            left: 7.4em;
             z-index: 10;
         }
         
         #second-palm-tree {
-            width: 5em;
             position: relative;
-            top: -137em;
-            left: 4.5em;
             z-index: 10;
         }
         
         #terry {
-            width: 7em;
             position: relative;
-            top: -138.4em;
-            left: -5em;
             z-index: 20;
         }
         
         #tar-pit {
-            width: 5em;
             position: relative;
-            top: -140.5em;
-            left: 5em;
             z-index: 10;
         }
         
         #first-blue-bubble-group {
-            width: 2.5em;
             position: relative;
-            top: -144.4em;
-            left: 5.5em;
             z-index: 10;
         }
         
         #skull {
-            width: 2.5em;
             position: relative;
-            top: -144.4em;
-            left: 4.4em;
             z-index: 10;
         }
         
         #second-blue-bubble-group {
-            width: 2.5em;
             position: relative;
-            top: -144.4em;
-            left: 5.5em;
             z-index: 10;
         }
         
         #second-palm-group {
-            width: 2.4em;
             position: relative;
-            top: -142.4em;
-            left: 6.5em;
             z-index: 10;
         }
         
         #nature-overlay {
-            width: 15.5em;
             position: relative;
-            top: -156.5em;
-            left: 0em;
-            z-index: 10;
+            z-index: ;
         }
         
         #third-palm-group {
-            width: 2.4em;
             position: relative;
-            top: -166.4em;
-            left: -6em;
-            z-index: 10;
+            z-index: ;
         }
         
         #first-caveman {
-            width: 2.4em;
             position: relative;
-            top: -165.8em;
-            left: -4.1em;
             z-index: 10;
         }
         
         #second-caveman {
-            width: 2.4em;
             position: relative;
-            top: -170em;
-            left: -2.7em;
             z-index: 10;
         }
         
         #dinosaur {
-            width: 8em;
             position: relative;
-            top: -173.7em;
-            left: 5.5em;
-            z-index: 10;
+            z-index: ;
         }
         
         #roar {
-            width: 4.5em;
             position: relative;
-            top: -180.5em;
-            left: 0em;
-            z-index: 10;
+            z-index: ;
         }
+        */
         
-        @media (min-width: 600px) {
-            * {}
+        @media (min-width: 1024px) {
+            body {
+                background-color: black;
+                margin: 5em 24em 0 2em;
+                position: relative;
+                display: grid;
+                place-items: center;
+                opacity: 1;
+                max-width: 64em;
+            }
+            #world {
+                position: relative;
+                width: 64em;
+            }
+            #world-overlay {
+                position: relative;
+                top: -34em;
+                width: 64em;
+            }
+            #hourglass {
+                position: relative;
+                width: 12em;
+                z-index: 4;
+            }
+            #wormhole {
+                position: relative;
+                width: 64em;
+                top: 20em;
+                z-index: 2;
+            }
+            #wormhole-black-bottom {
+                position: relative;
+                width: 64em;
+                top: 7.2em;
+                z-index: 1;
+            }
+            #white-bg {
+                position: relative;
+                z-index: 0;
+            }
+            #dino-days {
+                position: relative;
+                top: -12em;
+                text-align: center;
+                width: 48em;
+                z-index: 15;
+            }
+            #top-redline {
+                position: relative;
+                width: 64em;
+                z-index: 11;
+                top: -1em;
+            }
+            #big-cloud {
+                position: relative;
+                width: 22em;
+                top: 2em;
+                left: -17em;
+                z-index: 11;
+            }
+            #small-cloud {
+                position: relative;
+                top: -7em;
+                left: 22em;
+                width: 20em;
+                z-index: 11;
+            }
+            #first-volcano {
+                position: relative;
+                width: 26em;
+                top: -4em;
+                left: -20em;
+                z-index: 11;
+            }
+            #second-volcano {
+                position: relative;
+                width: 24em;
+                top: -19em;
+                left: 17em;
+                z-index: 11;
+            }
+            #third-volcano {
+                position: relative;
+                width: 16em;
+                top: -12em;
+                left: 15.5em;
+                z-index: 11;
+            }
+            #white-bg {
+                display: none;
+                height: 10em;
+                width: 100%;
+            }
+            #white-bg-med {
+                display: none;
+            }
+            #white-bg-lg {
+                display: grid;
+            }
         }
     </style>
 </head>
 
 <body>
+
+
+
+
+
 
     <div id="world">
         <img src="asstes199-248/Asset 242.svg">
@@ -481,163 +573,53 @@
         <img src="assets1-98/Asset 76.svg">
     </div>
 
-
-
-    <div class="white-wrapper">
-        <img id="dino-days" src="assets99-198/Asset 138.svg">
-
+    <div id="wormhole-black-bottom">
+        <img src="asstes199-248/Asset 240.svg">
+    </div>
+    <div id="white-bg">
+        <svg width="16em" height="150">
+            <rect width="16em" height="300" style="fill:white;stroke-width:0;stroke:white" />
+    </svg>
     </div>
 
+    <div id="white-bg-med">
+        <svg width="32em" height="300">
+            <rect width="32em" height="300" style="fill:white;stroke-width:0;stroke:white" />
+    </svg>
+    </div>
 
+    <div id="white-bg-lg">
+        <svg width="64em" height="500">
+            <rect width="64em" height="500" style="fill:white;stroke-width:0;stroke:white" />
+    </svg>
+    </div>
 
+    <div id="dino-days">
+        <img src="assets1-98/Asset 73.svg">
+    </div>
     <div id="top-redline">
         <img src="assets1-98/Asset 67.svg">
     </div>
-    <div id="first-cloud">
-        <img id="big-cloud" src="asstes199-248/SVG/Asset 255.svg">
-        <img id="small-cloud" src="asstes199-248/SVG/Asset 254.svg">
+
+
+    <div id="big-cloud">
+        <img src="assets99-198/Asset 144.svg">
     </div>
 
-    <div id="second-cloud">
-        <img id="big-cloud" src="asstes199-248/SVG/Asset 255.svg">
-        <img id="small-cloud" src="asstes199-248/SVG/Asset 254.svg">
+    <div id="small-cloud">
+        <img src="assets99-198/Asset 144.svg">
     </div>
     <div id="first-volcano">
         <img src="assets1-98/Asset 37.svg">
     </div>
 
-
     <div id="second-volcano">
-        <img src="assets1-98/Asset 38.svg">
+        <img src="assets1-98/Asset 37.svg">
     </div>
-    <div id="red-bg">
-        <img id="top-red-layer" src="asstes199-248/Asset 217.svg">
-        <img id="bottom-red-layer" src="asstes199-248/Asset 218.svg">
-    </div>
+
     <div id="third-volcano">
-        <img src="assets1-98/Asset 39.svg">
+        <img src="asstes199-248/Asset 207.svg">
     </div>
-    <div id="black-bg">
-        <img src="assets1-98/Asset 36.svg">
-    </div>
-    <div id="redline-asset34">
-        <img src="assets1-98/Asset 34.svg">
-    </div>
-    <div id="first-red-bubble">
-        <img src="assets1-98/Asset 44.svg">
-    </div>
-    <div id="first-bubble-group">
-        <img id="bubble1" src="assets1-98/Asset 44.svg">
-        <img id="bubble2" src="assets1-98/Asset 44.svg">
-    </div>
-
-    <div id="redline-asset52">
-        <img src="assets1-98/Asset 52.svg">
-    </div>
-    <div id="redline-asset55">
-        <img src="assets1-98/Asset 55.svg">
-    </div>
-    <div id="redline-asset54">
-        <img src="assets1-98/Asset 54.svg">
-    </div>
-    <div id="redline-asset53">
-        <img src="assets1-98/Asset 53.svg">
-    </div>
-
-    <div id="redline-asset51">
-        <img src="assets1-98/Asset 51.svg">
-    </div>
-    <div id="second-bubble-group">
-        <img id="bubble1" src="assets1-98/Asset 44.svg">
-        <img id="bubble2" src="assets1-98/Asset 44.svg">
-    </div>
-
-    <div id="redline-asset49">
-        <img src="assets1-98/Asset 49.svg">
-    </div>
-    <div id="last-red-bubble">
-        <img src="assets1-98/Asset 44.svg">
-    </div>
-    <div id="first-lava-set">
-        <img id="main-stream" src="assets1-98/Asset 64.svg">
-        <img id="small-side-stream" src="assets1-98/Asset 65.svg">
-        <img id="dark-stream" src="assets1-98/Asset 66.svg">
-    </div>
-
-    <div id="second-lava-set">
-        <img id="second-main-strem" src="assets1-98/Asset 64.svg">
-        <img id="second-small-side-stream" src="assets1-98/Asset 65.svg">
-        <img id="second-dark-stream" src="assets1-98/Asset 66.svg">
-    </div>
-
-    <div id="third-lava-set">
-        <img id="third-main-strem" src="assets1-98/Asset 64.svg">
-        <img id="third-small-side-stream" src="assets1-98/Asset 65.svg">
-        <img id="third-dark-stream" src="assets1-98/Asset 66.svg">
-    </div>
-    <div id="green-bg">
-        <img src="assets1-98/Asset 81.svg">
-    </div>
-
-    <div id="red-leaf">
-        <img src="assets99-198/Asset 112.svg">
-    </div>
-    <div id="first-palm-tree">
-        <img src="assets99-198/Asset 171.svg">
-    </div>
-    <div id="first-palm-group">
-        <img src="assets1-98/Asset 43.svg">
-    </div>
-
-    <div id="second-palm-tree">
-        <img src="assets1-98/Asset 41.svg">
-    </div>
-
-    <div id="terry">
-        <img src="assets1-98/Asset 1.svg">
-    </div>
-    <div id="tar-pit">
-        <img src="assets1-98/Asset 69.svg">
-    </div>
-    <div id="first-blue-bubble-group">
-        <img src="assets1-98/Asset 71.svg">
-    </div>
-
-    <div id="skull">
-        <img src="assets99-198/Asset 166.svg">
-    </div>
-
-
-    <div id="second-blue-bubble-group">
-        <img src="assets1-98/Asset 72.svg">
-    </div>
-
-    <div id="second-palm-group">
-        <img src="assets1-98/Asset 43.svg">
-    </div>
-
-    <div id="nature-overlay">
-        <img src="assets99-198/Asset 168.svg">
-    </div>
-    <div id="third-palm-group">
-        <img src="assets99-198/Asset 172.svg">
-    </div>
-
-    <div id="first-caveman">
-        <img src="assets99-198/Asset 157.svg">
-    </div>
-
-    <div id="second-caveman">
-        <img src="assets99-198/Asset 158.svg">
-    </div>
-    <div id="dinosaur">
-        <img src="assets1-98/Asset 4.svg">
-    </div>
-
-    <div id="roar">
-        <img src="assets1-98/Asset 5.svg">
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
     <script src="gsap.js"></script>
