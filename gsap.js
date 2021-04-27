@@ -11,7 +11,7 @@ let tl = gsap.timeline({
             toggleActions: "play none reverse play"
         }
     })
-    .fromTo("#dino-days", { x: -300, opacity: 0 }, { duration: 2.5, opacity: 1, x: 10, ease: "elastic" })
+    .fromTo("#dino-days", { opacity: 0 }, { duration: 2.5, fontWeight: "900", scale: "1.2", opacity: 1, ease: "elastic" })
     .fromTo("#hourglass", { opacity: 0 }, { duration: 1, rotate: 360, opacity: 1 })
     .fromTo("#first-cloud", { opacity: 0 }, { opacity: 1, ease: "back", scale: "1.2", repeat: 3 })
     .fromTo("#second-cloud", { opacity: 0 }, { opacity: 1, ease: "back", scale: "1.1", repeat: 3 })
@@ -35,7 +35,8 @@ let tl = gsap.timeline({
     .fromTo("#skull", { y: -10, opacity: 1 }, { duration: 1, opacity: 0, y: 1, ease: "bounce" })
     .fromTo("#second-blue-bubble-group", { opacity: 0 }, { opacity: 1, scale: 1.2, ease: "elastic", repeat: "-1" })
     .to("#nature-overlay", { duration: .2, y: 2, x: 10, repeat: "3" })
-    .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, scale: 1.2, ease: "elastic" })
+    .fromTo("#roar", { opacity: 0 }, { duration: 3, opacity: 1, y: -20, scale: 1.2, ease: "elastic" })
     .fromTo("#terry", { x: -200 }, { duration: 5, x: 400 })
+    .to("#dinosaur", { x: -40, duration: 1, ease: "power4.in" })
     .to("#first-caveman", { duration: 1, y: -100, ease: "bounce.in" })
     .to("#second-caveman", { duration: 1, x: -60, y: 57, ease: "bounce.in", zIndex: "0" })
