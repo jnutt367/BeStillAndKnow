@@ -1,15 +1,16 @@
 gsap.registerPlugin(ScrollTrigger)
 
 let tl = gsap.timeline({
-    defaults: {
-        opacity: 0
-    },
-    scrollTrigger: {
-        trigger: "",
-        markers: false,
-        pin: true,
-        start: "top 75%",
-        end: "bottom 45%",
-        toggleActions: "restart none none reverse"
-    }
-})
+        defaults: {
+            opacity: 0
+        },
+        scrollTrigger: {
+            trigger: "#hourglass",
+            markers: false,
+            pin: true,
+            start: "top 75%",
+            end: "bottom 45%",
+            toggleActions: "restart none none reverse"
+        }
+    })
+    .fromTo("#hourglass", { opacity: 0 }, { opacity: 1, rotate: 720 })
