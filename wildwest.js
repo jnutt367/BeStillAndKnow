@@ -14,7 +14,8 @@ let tl = gsap.timeline({
         }
     })
     .fromTo("#hourglass", { opacity: 0 }, { opacity: 1, rotate: 720 })
-    .fromTo("#train", { x: 300, opacity: 1 }, { duration: 5, x: -300, opacity: 1, repeat: -1 }, 0)
+    .fromTo("#train", { x: 300 }, { duration: 5, x: -300, opacity: 1, repeat: -1 }, 0)
     .fromTo("#smoke", { x: 300, opacity: 1 }, { duration: 5, x: -300, opacity: 1, repeat: -1 }, 0)
-    .fromTo("#clouds", { x: -300, opacity: 1 }, { duration: 3, x: 300, opacity: 1, repeat: -1 }, 0)
+    .fromTo("#clouds", { x: -300, opacity: 1 }, { duration: 3, x: 300, opacity: 0.9, ease: "power2.inOut", repeat: -1 }, 0)
     .fromTo("#sun", { x: -40, opacity: 1 }, { duration: 5, x: 300, opacity: 1, repeat: -1 }, 0)
+    .to("#cow1", { x: 10 })

@@ -11,8 +11,8 @@
     <style>
         body {
             background-color: black;
-            margin: 5em 3em;
             position: relative;
+            margin: 5em 3em;
             display: grid;
             place-items: center;
             opacity: 1;
@@ -58,8 +58,9 @@
         /* -- THE ABOVE IS JUST AN EXPERIMENT / TAKE AWAY AND EVERYTHING WORKS*/
         
         #bg-wrapper {
-            background-color: bisque;
+            background-color: yellow;
             width: 16em;
+            overflow: "hidden";
         }
         
         #title {
@@ -77,6 +78,7 @@
         #clouds {
             position: relative;
             top: -10em;
+            overflow: "hidden";
         }
         
         #first-cloud {
@@ -123,21 +125,46 @@
         
         #cow-pasture {
             position: relative;
-            top: -17em;
+            top: -18.4em;
             left: 9.5em;
             width: 4.4em;
+        }
+        
+        #water-tower {
+            position: relative;
+            width: 3em;
+            top: -19em;
+            left: -6em;
+        }
+        
+        #cows {
+            position: relative;
+            width: 2em;
+            left: 14em;
+            top: -24em;
+        }
+        
+        #cow1 {
+            position: relative;
+        }
+        
+        #cow2 {
+            position: relative;
+            left: -1.5em;
         }
         
         #train-bg {
             position: relative;
             width: 16em;
             z-index: 20;
+            overflow: "hidden";
         }
         
         #wildwest-bg {
             position: relative;
             max-width: 16em;
             top: -17em;
+            overflow: "hidden";
         }
         
         #town {
@@ -223,6 +250,11 @@
             <img id="bridge-cactus" src="assets1-98/Asset 82.svg">
             <img id="bridge-btm-cactus" src="assets1-98/Asset 90.svg">
             <img id="cow-pasture" src="assets1-98/Asset 93.svg">
+            <img id="water-tower" src="assets1-98/Asset 89.svg">
+            <div id="cows">
+                <img id="cow1" src="assets1-98/Asset 91.svg">
+                <img id="cow2" src="assets1-98/Asset 92.svg">
+            </div>
         </div>
 
 
