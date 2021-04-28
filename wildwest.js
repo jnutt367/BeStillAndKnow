@@ -19,6 +19,6 @@ let tl = gsap.timeline({
     .fromTo("#clouds", { x: -300, opacity: 1 }, { duration: 3, x: 300, opacity: 0.9, ease: "power2.inOut", repeat: -1 }, 0)
     .fromTo("#sun", { x: -40, opacity: 1 }, { duration: 5, x: 300, opacity: 1, repeat: -1 }, 0)
     .to("#cow1", { x: -10, opacity: 1 })
-    .fromTo("#sheriff", { y: -40, opacity: 1 }, { duration: 1.5, y: 60, scale: "1.3", opacity: 1 }, 0)
+    .fromTo("#sheriff", { y: -40, opacity: 1 }, { duration: 1.5, x: 20, y: 60, scale: "1.3", opacity: 1 }, 1)
     .fromTo("#outlaw", { x: 10, opacity: 1 }, { x: 50, y: 70, opacity: 1 }, +0.5)
-    .fromTo("#draw", { opacity: 0 }, { opacity: 1 }, 1.5)
+    .fromTo("#draw", { opacity: 0 }, { opacity: 1 }, 2.5)
