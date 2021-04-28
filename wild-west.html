@@ -9,10 +9,58 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
     <style>
+        body {
+            background-color: black;
+            margin: 5em 0 0 1em;
+            position: relative;
+            display: grid;
+            place-items: center;
+            opacity: 1;
+            z-index: 0;
+            max-width: 16em;
+        }
+        
+        #world {
+            position: relative;
+            width: 16em;
+        }
+        
+        #world-overlay {
+            position: relative;
+            top: -9em;
+            width: 16em;
+        }
+        
+        #hourglass {
+            position: relative;
+            width: 3em;
+            z-index: 4;
+        }
+        
+        #wormhole {
+            position: relative;
+            width: 16em;
+            top: 5.2em;
+            z-index: 2;
+        }
+        
+        #wormhole-black-bottom {
+            position: relative;
+            width: 16em;
+            top: 2em;
+            z-index: 1;
+        }
+        
+        #white-bg {
+            position: relative;
+            z-index: 0;
+        }
+        /* -- THE ABOVE IS JUST AN EXPERIMENT / TAKE AWAY AND EVERYTHING WORKS*/
+        
         #wildwest-bg {
             position: relative;
             max-width: 400px;
-            margin: 1em 0 0 3em;
+            margin: 1em 1em 0 0em;
         }
         
         #town {
@@ -35,6 +83,37 @@
 </head>
 
 <body>
+    <a href="index.html">DINO DAYS</a>
+
+    <div id="world">
+        <img src="asstes199-248/Asset 242.svg">
+
+    </div>
+
+    <div id="world-overlay">
+        <img src="asstes199-248/Asset 227.svg">
+    </div>
+    <div id="hourglass">
+        <img src="assets1-98/Asset 74.svg">
+    </div>
+
+    <div id="wormhole">
+        <img src="assets1-98/Asset 76.svg">
+    </div>
+
+    <div id="wormhole-black-bottom">
+        <img src="asstes199-248/Asset 240.svg">
+    </div>
+    <div id="white-bg">
+        <svg width="16em" height="150">
+            <rect width="16em" height="300" style="fill:white;stroke-width:0;stroke:white" />
+    </svg>
+    </div>
+
+
+
+
+
 
     <div id="wildwest-bg">
         <img src="assets99-198/Asset 132.svg">
