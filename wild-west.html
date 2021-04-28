@@ -57,9 +57,87 @@
         }
         /* -- THE ABOVE IS JUST AN EXPERIMENT / TAKE AWAY AND EVERYTHING WORKS*/
         
+        #bg-wrapper {
+            background-color: bisque;
+            width: 16em;
+        }
+        
+        #title {
+            position: relative;
+            top: 1.2em;
+        }
+        
+        #sun {
+            position: relative;
+            width: 5em;
+            top: 6em;
+            left: 1em;
+        }
+        
+        #clouds {
+            position: relative;
+            top: -10em;
+        }
+        
+        #first-cloud {
+            position: relative;
+            left: 2em;
+        }
+        
+        #second-cloud {
+            position: relative;
+            top: -2em;
+        }
+        
+        #smoke {
+            position: relative;
+            top: -17.7em;
+            left: 5em;
+            width: 8em;
+        }
+        
+        #train {
+            position: relative;
+            top: -12em;
+            width: 10em;
+            left: 4em;
+        }
+        
+        #bridge {
+            position: relative;
+            top: -15.7em;
+        }
+        
+        #bridge-cactus {
+            position: relative;
+            width: 1em;
+            top: -31.3em;
+        }
+        
+        #bridge-btm-cactus {
+            position: relative;
+            width: .7em;
+            top: -24em;
+            left: 10em;
+        }
+        
+        #cow-pasture {
+            position: relative;
+            top: -17em;
+            left: 9.5em;
+            width: 4.4em;
+        }
+        
+        #train-bg {
+            position: relative;
+            width: 16em;
+            z-index: 20;
+        }
+        
         #wildwest-bg {
             position: relative;
             max-width: 16em;
+            top: -17em;
         }
         
         #town {
@@ -84,6 +162,12 @@
             left: 1em;
             z-index: 10;
             position: relative;
+        }
+        
+        #street {
+            position: relative;
+            top: -17em;
+            z-index: 10;
         }
     </style>
 
@@ -122,19 +206,46 @@
 
 
 
-    <div id="wildwest-bg">
-        <img src="assets99-198/Asset 132.svg">
-        <img id="town" src="assets250-300/SVG/Asset 268.svg">
-        <img id="cactus" src="assets1-98/Asset 82.svg">
-        <img id="carriage" src="assets1-98/Asset 98.svg">
-        <img src="">
+
+    <div id="bg-wrapper">
+        <div id="train-bg">
+            <img id="title" src="assets99-198/Asset 137.svg">
+            <img id="sun" src="assets99-198/Asset 119.svg">
+            <img src="assets99-198/Asset 132.svg">
+            <div id="clouds">
+                <img id="first-cloud" src="assets1-98/Asset 87.svg">
+                <img id="second-cloud" src="assets1-98/Asset 87.svg">
+            </div>
+
+            <img id="train" src="assets1-98/Asset 7.svg">
+            <img id="smoke" src="assets1-98/Asset 83.svg">
+            <img id="bridge" src="assets1-98/Asset 88.svg">
+            <img id="bridge-cactus" src="assets1-98/Asset 82.svg">
+            <img id="bridge-btm-cactus" src="assets1-98/Asset 90.svg">
+            <img id="cow-pasture" src="assets1-98/Asset 93.svg">
+        </div>
+
+
+        <div id="wildwest-bg">
+            <img src="assets99-198/Asset 132.svg">
+            <img id="town" src="assets250-300/Asset 268.svg">
+            <img id="cactus" src="assets1-98/Asset 82.svg">
+            <img id="carriage" src="assets1-98/Asset 98.svg">
+            <img id="street" src="assets250-300/Asset 259.svg">
+        </div>
     </div>
+
+
+
+
+
     <div id="foreground">
         <img src="">
         <img src="">
         <img src="">
         <img src="">
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
     <script src="wildwest.js"></script>
